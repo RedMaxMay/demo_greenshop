@@ -19,7 +19,7 @@ export default function Nav({ isOpen, handleHamburgerClick }) {
         <NavLink
           onClick={handleHamburgerClick}
           className={checkActive}
-          to="/greenshop"
+          to="/demo_greenshop"
         >
           Main Page
         </NavLink>

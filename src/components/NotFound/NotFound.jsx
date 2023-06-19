@@ -9,7 +9,7 @@ export default function NotFound() {
     <div className={s.page}>
       <img src={img} alt="Page is not found" />
       <p>Oops, something happened, this page is missing!</p>
-      <Link to="/greenshop">
+      <Link to="/demo_greenshop">
         <Button text="back to home page" />
       </Link>
     </div>

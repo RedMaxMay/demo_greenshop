@@ -14,7 +14,7 @@ export default function ThanksForOrderModal({ setIsSent }) {
   };
 
   return (
-    <Link to='/greenshop'>
+    <Link to='/demo_greenshop'>
       <div className={s.modal} onClick={onClick}>
         <div className={s.modal_content}>
           <img src={flower} alt="thank you flower" />

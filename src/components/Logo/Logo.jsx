@@ -4,7 +4,7 @@ import s from "./style.module.css";
 
 export default function Logo({ onClick }) {
   return (
-    <NavLink onClick={onClick} to="/greenshop" className={s.logo_container}>
+    <NavLink onClick={onClick} to="/demo_greenshop" className={s.logo_container}>
       <svg
         width="35"
         height="35"
