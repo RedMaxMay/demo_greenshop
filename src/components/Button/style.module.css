@@ -1,0 +1,19 @@
+.button {
+    padding: 10px 20px;
+    border-radius: 7px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: var(--color-green);
+    color: white;
+    text-transform: uppercase;
+    transition: all 0.2s ease;
+    border: 1px solid var(--color-green);
+}
+
+.button:hover {
+    /* box-shadow: var(--shadow); */
+    background-color: #fff;
+    color: var(--color-green);
+    border: 1px solid var(--color-green);
+}

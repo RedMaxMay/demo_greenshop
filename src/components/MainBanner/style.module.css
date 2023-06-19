@@ -1,0 +1,51 @@
+.banner_container {
+    background-color: #F5F5F5;
+    width: 100%;
+}
+
+.banner_container div {
+    background-image: url('./banner2.png');
+    background-position: right bottom;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px;
+}
+
+.banner_container p {
+    margin: 0;
+    max-width: 60%;
+}
+
+.banner_container h1 {
+    margin: 0;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.slogan {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.slogan span {
+    font-size: 2.5rem;
+    color: var(--color-green);
+}
+
+.info {
+    color: var(--color-light-gray);
+}
+
+
+@media (max-width: 768px) {
+    .banner_container div {
+        background-image: url('./banner_mob.png');
+    }
+}

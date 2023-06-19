@@ -1,0 +1,27 @@
+.btns {
+    position: absolute;
+    top: 155px;
+    right: calc(50% - 17.5px);
+    z-index: 100
+}
+
+.btn_bg {
+    background-color: #fff;
+    padding: 5px;
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+    opacity: 0.75;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.btn_bg:hover {
+    opacity: 1;
+    fill: var(--color-green);
+}
+
+@media (max-width: 768px) {}

@@ -1,0 +1,30 @@
+.features {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 30px;
+}
+
+.features div {
+    width: 25%;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--color-light-gray);
+    font-size: 0.8rem;
+}
+
+@media (max-width: 768px) {
+
+    .features {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+
+    }
+
+    .features div {
+        width: 100%
+    }
+
+
+}

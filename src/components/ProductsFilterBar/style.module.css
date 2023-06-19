@@ -1,0 +1,217 @@
+.filter_bar {
+    background-color: var(--color-bg);
+    grid-column: -1 / 1;
+    padding: 15px;
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.search_wrap {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.search_icon {
+    position: absolute;
+    left: 15px;
+}
+
+.search_input {
+    padding: 10px 10px 10px 40px;
+    border-radius: 7px 0 0 7px;
+    border: none;
+    outline: none;
+    width: 120px;
+    height: 45px;
+}
+
+.clear_btn {
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    background-color: #fff;
+    cursor: pointer;
+    border-radius: 0 7px 7px 0;
+    height: 45px;
+    color: var(--color-light-gray);
+}
+
+.clear_price_btn {
+    padding: 10px 10px;
+    border: none;
+    outline: none;
+    background-color: #fff;
+    cursor: pointer;
+    border-radius: 7px 0 0 7px;
+    height: 45px;
+    color: var(--color-light-gray);
+}
+
+.select {
+    border: none;
+    border-radius: 7px;
+    padding: 10px;
+    height: 45px;
+    width: 170px;
+    outline: none;
+}
+
+.price_field {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+.price_field input {
+    padding: 10px 10px 10px 15px;
+    border-radius: 0 7px 7px 0;
+    border: none;
+    outline: none;
+    width: 80px;
+    height: 45px;
+}
+
+.price_input_wrap {
+    display: flex;
+    align-items: center;
+}
+
+.mob_sidebar {
+    display: none;
+}
+
+.filters_btn {
+    display: none;
+}
+
+.filter_backdrop {
+    display: none;
+}
+
+.active_filters {
+    display: none;
+}
+
+@media (max-width: 1023px) {
+    .mob_sidebar {
+        display: block;
+        overflow: auto;
+    }
+
+    .filters_btn {
+        display: block;
+        grid-column: -1 / 1;
+    }
+
+    .active_filters {
+        display: block;
+        grid-column: -1 / 1;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px 20px;
+        color: var(--color-light-gray);
+    }
+
+    .active_filters p {
+        margin: 0;
+        padding: 5px;
+        background-color: var(--color-bg);
+        border-radius: 7px;
+        font-size: 0.75rem;
+    }
+
+    .bold,
+    .bold_def {
+        font-size: 0.75rem;
+        font-weight: 600;
+        position: relative;
+    }
+
+    .bold::after {
+        content: 'x';
+        position: absolute;
+        width: 15px;
+        height: 15px;
+        background-color: var(--color-light-gray);
+        color: #fff;
+        text-align: center;
+        border-radius: 50%;
+        top: -10px;
+        cursor: pointer;
+    }
+
+    .filter_bar {
+        overflow: auto;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        max-width: 260px;
+
+        background-color: var(--color-bg);
+        padding: 20px;
+        transform: translateX(-100%);
+        transition: transform 0.5s ease-in-out;
+        z-index: 200;
+
+        flex-direction: column;
+        gap: 10px;
+        border-radius: 0;
+    }
+
+    .filter_bar.open {
+        transform: translateX(0);
+    }
+
+    .filter_backdrop {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 199;
+        opacity: 0;
+        transition: opacity 0.5s ease-in-out;
+        pointer-events: none;
+    }
+
+    .filter_backdrop.open {
+        opacity: 1;
+        pointer-events: auto;
+    }
+
+    .price_field {
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+    }
+
+    .price_input_wrap {
+        width: 100%;
+    }
+
+    .price_input_wrap input {
+        width: 100%;
+    }
+
+    .search_input {
+        width: 100%;
+    }
+
+    .select {
+        width: 100%;
+    }
+
+}

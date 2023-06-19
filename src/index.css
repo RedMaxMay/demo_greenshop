@@ -1,0 +1,48 @@
+@import-normalize;
+
+* {
+  box-sizing: border-box;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+:root {
+  --font-text: 'Inter', sans-serif;
+  --font-headings: 'Cardo', serif;
+  --color-green: #46A358;
+  --color-border: rgba(70, 163, 89, 0.35);
+  --color-gray: #333333;
+  --color-light-gray: #8e8e8e;
+  --color-bg: rgb(244, 244, 244);
+  --shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-headings);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-text);
+}
+
+body,
+html {
+  height: 100%;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+main {
+  flex: 1 1 auto;
+}
