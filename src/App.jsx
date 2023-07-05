@@ -25,7 +25,7 @@ function App() {
       <Header />
 
       <Routes>
-        <Route path="/demo_greenshop" element={<MainPage />} />
+        <Route path="/" element={<MainPage />} />
         <Route path="/products/all" element={<ProductsPage />} />
         <Route path="/product/:id" element={<SingleProductPage />} />
         <Route path="/categories" element={<CategoriesPage />} />
