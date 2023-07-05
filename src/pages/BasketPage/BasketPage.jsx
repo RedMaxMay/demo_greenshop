@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import Container from "../../components/Container/Container";
 import { useSelector } from "react-redux";
 import BasketItem from "../../components/BasketItem/BasketItem";
@@ -7,8 +7,6 @@ import BasketTotal from "../../components/BasketTotal/BasketTotal";
 import { initialProducts } from "../../initialValue/products";
 
 export default function BasketPage() {
-  const { isInitialProducts } = useSelector((state) => state.products);
-
   const { basket } = useSelector((state) => state.basket);
   const basketProducts = basket.map((item) => {
     const product = initialProducts.find((prod) => prod.id === item.id);

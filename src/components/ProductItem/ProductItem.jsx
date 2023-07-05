@@ -2,7 +2,6 @@ import React from "react";
 import s from "./style.module.css";
 import { Link } from "react-router-dom";
 import ProductItemBtns from "../ProductItemBtns/ProductItemBtns";
-import { useSelector } from "react-redux";
 
 export default function ProductItem({
   id,
@@ -11,8 +10,6 @@ export default function ProductItem({
   discont_price,
   image,
 }) {
-  const { isInitialProducts } = useSelector((state) => state.products);
-
   return (
     <div className={s.container}>
       <div className={s.btns_wrap}>

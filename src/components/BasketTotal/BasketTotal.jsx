@@ -18,10 +18,6 @@ export default function BasketTotal({ totalPrice, basket }) {
 
     if (phone.length > 5) {
       setIsCorrectPhone(true);
-      const data = {
-        phoneNumber: phone,
-        order: basket,
-      };
       setPhone("");
       setIsSent(true);
     } else {

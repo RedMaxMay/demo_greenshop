@@ -7,13 +7,12 @@ import NotFoundPage from "./pages/NotFoundPage/NotFoundPage";
 import ProductsPage from "./pages/ProductsPage/ProductsPage";
 import CategoriesPage from "./pages/CategoriesPage/CategoriesPage";
 import { useEffect } from "react";
-import { useDispatch, useSelector } from "react-redux";
+import { useSelector } from "react-redux";
 import SingleProductPage from "./pages/SingleProductPage/SingleProductPage";
 import ScrollToTopButton from "./components/ScrollToTopButton/ScrollToTopButton";
 import BasketPage from "./pages/BasketPage/BasketPage";
 
 function App() {
-  const dispatch = useDispatch();
 
   const { basket } = useSelector((state) => state.basket);
 

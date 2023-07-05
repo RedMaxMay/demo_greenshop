@@ -1,7 +1,7 @@
 import React from "react";
 import s from "./style.module.css";
 import ButtonLight from "../ButtonLight/ButtonLight";
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 import {
   decrementInBasket,
   deleteFromBasket,
@@ -17,7 +17,6 @@ export default function BasketItem({
   quantity,
 }) {
   const dispatch = useDispatch();
-  const { isInitialProducts } = useSelector((state) => state.products);
 
   return (
     <div className={s.basket_item}>

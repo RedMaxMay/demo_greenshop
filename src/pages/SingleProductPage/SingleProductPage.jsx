@@ -4,7 +4,7 @@ import Container from "../../components/Container/Container";
 import s from "./style.module.css";
 import Button from "../../components/Button/Button";
 import ButtonLight from "../../components/ButtonLight/ButtonLight";
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 import { addToBasket } from "../../redux/basketSlice";
 import NotFound from "../../components/NotFound/NotFound";
 import { initialProducts } from "../../initialValue/products";
@@ -14,8 +14,6 @@ export default function SingleProductPage() {
   const [product, setProduct] = useState({});
   const [quantity, setQuantity] = useState(1);
   const [isAdded, setIsAdded] = useState(false);
-
-  const { isInitialProducts } = useSelector((state) => state.products);
 
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: "smooth" });

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import s from "./style.module.css";
 import Container from "../Container/Container";
 import ButtonLight from "../ButtonLight/ButtonLight";
